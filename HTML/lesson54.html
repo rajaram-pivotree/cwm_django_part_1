@@ -1,0 +1,792 @@
+ 
+    <!DOCTYPE html>
+    <html>
+    <head>
+                                <meta name="viewport" content="width=device-width, initial-scale=1">
+                                <style>
+                                * {box-sizing: border-box}
+                                body {font-family: Verdana, sans-serif; margin:0}
+                                .mySlides {display: none}
+                                img {vertical-align: middle;}
+                                
+                                /* Slideshow container */
+                                .slideshow-container {
+                                  max-width: 1000px;
+                                  position: relative;
+                                  margin: auto;
+                                }
+                                
+                                /* Next & previous buttons */
+                                .prev, .next {
+                                  cursor: pointer;
+                                  position: absolute;
+                                  top: 50%;
+                                  width: auto;
+                                  padding: 16px;
+                                  margin-top: -22px;
+                                  color: white;
+                                  font-weight: bold;
+                                  font-size: 18px;
+                                  transition: 0.6s ease;
+                                  border-radius: 0 3px 3px 0;
+                                  user-select: none;
+                                }
+                                
+                                /* Position the "next button" to the right */
+                                .next {
+                                  right: 0;
+                                  border-radius: 3px 0 0 3px;
+                                }
+                                
+                                /* On hover, add a black background color with a little bit see-through */
+                                .prev:hover, .next:hover {
+                                  background-color: rgba(0,0,0,0.8);
+                                }
+                                
+                                /* Caption text */
+                                .text {
+                                  color: #f2f2f2;
+                                  font-size: 15px;
+                                  padding: 8px 12px;
+                                  position: absolute;
+                                  bottom: 8px;
+                                  width: 100%;
+                                  text-align: center;
+                                }
+                                
+                                /* Number text (1/3 etc) */
+                                .numbertext {
+                                  color: #f2f2f2;
+                                  font-size: 12px;
+                                  padding: 8px 12px;
+                                  position: absolute;
+                                  top: 0;
+                                }
+                                
+                                /* The dots/bullets/indicators */
+                                .dot {
+                                  cursor: pointer;
+                                  height: 15px;
+                                  width: 15px;
+                                  margin: 0 2px;
+                                  background-color: #bbb;
+                                  border-radius: 50%;
+                                  display: inline-block;
+                                  transition: background-color 0.6s ease;
+                                }
+                                
+                                .active, .dot:hover {
+                                  background-color: #717171;
+                                }
+                                
+                                /* Fading animation */
+                                .fade {
+                                  animation-name: fade;
+                                  animation-duration: 1.5s;
+                                }
+                                
+                                @keyframes fade {
+                                  from {opacity: .4} 
+                                  to {opacity: 1}
+                                }
+                                
+                                /* On smaller screens, decrease text size */
+                                @media only screen and (max-width: 300px) {
+                                  .prev, .next,.text {font-size: 11px}
+                                }
+                                
+                                .pagination {
+                                  display: inline-block;
+                                }
+                                
+                                .pagination a {
+                                  color: black;
+                                  float: left;
+                                  padding: 8px 16px;
+                                  text-decoration: none;
+                                  transition: background-color .3s;
+                                  border: 1px solid #ddd;
+                                }
+                                
+                                .pagination a.active {
+                                  background-color: #4CAF50;
+                                  color: white;
+                                  border: 1px solid #4CAF50;
+                                }
+                                
+                                .pagination a:hover:not(.active) {background-color: #ddd;}
+                                </style>
+                                </head>
+                                <body>
+
+                            <div class="slideshow-container">
+                                  
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_1\frame0.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_1\frame0.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_1.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_1\frame0.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_1.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_1\frame1.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_1\frame1.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_1.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_1\frame1.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_1.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_1\frame2.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_1\frame2.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_1.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_1\frame2.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_1.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_1\frame3.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_1\frame3.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_1.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_1\frame3.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_1.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_1\frame4.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_1\frame4.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_1.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_1\frame4.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_1.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_1\frame5.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_1\frame5.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_1.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_1\frame5.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_1.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_1\frame6.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_1\frame6.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_1.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_1\frame6.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_1.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_2\frame0.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_2\frame0.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_2.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_2\frame0.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_2.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_2\frame1.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_2\frame1.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_2.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_2\frame1.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_2.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_2\frame2.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_2\frame2.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_2.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_2\frame2.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_2.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_2\frame3.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_2\frame3.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_2.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_2\frame3.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_2.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_2\frame4.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_2\frame4.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_2.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_2\frame4.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_2.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_3\frame0.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_3\frame0.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_3.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_3\frame0.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_3.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_3\frame2.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_3\frame2.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_3.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_3\frame2.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_3.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_3\frame4.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_3\frame4.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_3.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_3\frame4.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_3.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_3\frame6.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_3\frame6.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_3.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_3\frame6.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_3.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_4\frame0.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_4\frame0.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_4.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_4\frame0.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_4.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_4\frame2.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_4\frame2.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_4.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_4\frame2.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_4.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_4\frame3.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_4\frame3.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_4.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_4\frame3.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_4.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_4\frame4.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_4\frame4.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_4.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_4\frame4.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_4.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_4\frame5.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_4\frame5.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_4.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_4\frame5.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_4.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_5\frame0.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_5\frame0.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_5.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_5\frame0.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_5.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_5\frame2.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_5\frame2.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_5.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_5\frame2.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_5.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_5\frame3.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_5\frame3.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_5.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_5\frame3.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_5.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_5\frame5.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_5\frame5.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_5.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_5\frame5.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_5.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_5\frame6.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_5\frame6.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_5.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_5\frame6.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_5.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_6\frame0.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_6\frame0.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_6.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_6\frame0.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_6.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_6\frame1.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_6\frame1.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_6.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_6\frame1.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_6.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_6\frame2.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_6\frame2.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_6.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_6\frame2.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_6.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_6\frame3.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_6\frame3.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_6.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_6\frame3.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_6.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_6\frame4.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_6\frame4.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_6.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_6\frame4.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_6.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_6\frame6.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_6\frame6.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_6.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_6\frame6.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_6.wav</b></h2>
+                            </div>
+                            
+                          
+           
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src=../cwm_djangoseriesone\lesson54_7\frame0.jpg style="width:100%;height:100%">
+                            <div class="text">cwm_djangoseriesone\lesson54_7\frame0.jpg</div>
+                            <audio controls >
+                                    <source src="../cwm_djangoseriesone\lesson54_7.wav" type="audio/wav">
+                                </audio>
+                                <h2><b>"Image":cwm_djangoseriesone\lesson54_7\frame0.jpg</b></h2><br>
+                                <h2><b>"Audio":cwm_djangoseriesone\lesson54_7.wav</b></h2>
+                            </div>
+                            
+                          
+         
+                    <a class="prev" onclick="plusSlides(-1)"><b>></b></a>
+                    <a class="next" onclick="plusSlides(1)"><b><</b></a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                    
+                        <span class="dot" onclick="currentSlide(1)">1</span> 
+                        <span class="dot" onclick="currentSlide(2)">2</span> 
+                        <span class="dot" onclick="currentSlide(3)">3</span> 
+                        <span class="dot" onclick="currentSlide(4)">4</span> 
+                        <span class="dot" onclick="currentSlide(5)">5</span> 
+                        <span class="dot" onclick="currentSlide(6)">6</span> 
+                        <span class="dot" onclick="currentSlide(7)">7</span> 
+                        <span class="dot" onclick="currentSlide(8)">8</span> 
+                        <span class="dot" onclick="currentSlide(9)">9</span> 
+                        <span class="dot" onclick="currentSlide(10)">10</span> 
+                        <span class="dot" onclick="currentSlide(11)">11</span> 
+                        <span class="dot" onclick="currentSlide(12)">12</span> 
+                        <span class="dot" onclick="currentSlide(13)">13</span> 
+                        <span class="dot" onclick="currentSlide(14)">14</span> 
+                        <span class="dot" onclick="currentSlide(15)">15</span> 
+                        <span class="dot" onclick="currentSlide(16)">16</span> 
+                        <span class="dot" onclick="currentSlide(17)">17</span> 
+                        <span class="dot" onclick="currentSlide(18)">18</span> 
+                        <span class="dot" onclick="currentSlide(19)">19</span> 
+                        <span class="dot" onclick="currentSlide(20)">20</span> 
+                        <span class="dot" onclick="currentSlide(21)">21</span> 
+                        <span class="dot" onclick="currentSlide(22)">22</span> 
+                        <span class="dot" onclick="currentSlide(23)">23</span> 
+                        <span class="dot" onclick="currentSlide(24)">24</span> 
+                        <span class="dot" onclick="currentSlide(25)">25</span> 
+                        <span class="dot" onclick="currentSlide(26)">26</span> 
+                        <span class="dot" onclick="currentSlide(27)">27</span> 
+                        <span class="dot" onclick="currentSlide(28)">28</span> 
+                        <span class="dot" onclick="currentSlide(29)">29</span> 
+                        <span class="dot" onclick="currentSlide(30)">30</span> 
+                        <span class="dot" onclick="currentSlide(31)">31</span> 
+                        <span class="dot" onclick="currentSlide(32)">32</span> 
+                        <span class="dot" onclick="currentSlide(33)">33</span>                 </div>
+
+                    <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+
+                  
+
+    
+                        <div class="pagination">
+                          <a href="#">&laquo;</a>
+                          
+    
+                        <a href="lesson1.html">0</a>
+                       
+                        <a href="lesson10.html">1</a>
+                       
+                        <a href="lesson11.html">2</a>
+                       
+                        <a href="lesson12.html">3</a>
+                       
+                        <a href="lesson13.html">4</a>
+                       
+                        <a href="lesson14.html">5</a>
+                       
+                        <a href="lesson15.html">6</a>
+                       
+                        <a href="lesson16.html">7</a>
+                       
+                        <a href="lesson17.html">8</a>
+                       
+                        <a href="lesson18.html">9</a>
+                       
+                        <a href="lesson19.html">10</a>
+                       
+                        <a href="lesson2.html">11</a>
+                       
+                        <a href="lesson20.html">12</a>
+                       
+                        <a href="lesson21.html">13</a>
+                       
+                        <a href="lesson22.html">14</a>
+                       
+                        <a href="lesson23.html">15</a>
+                       
+                        <a href="lesson24.html">16</a>
+                       
+                        <a href="lesson25.html">17</a>
+                       
+                        <a href="lesson26.html">18</a>
+                       
+                        <a href="lesson27.html">19</a>
+                       
+                        <a href="lesson28.html">20</a>
+                       
+                        <a href="lesson29.html">21</a>
+                       
+                        <a href="lesson3.html">22</a>
+                       
+                        <a href="lesson30.html">23</a>
+                       
+                        <a href="lesson31.html">24</a>
+                       
+                        <a href="lesson32.html">25</a>
+                       
+                        <a href="lesson33.html">26</a>
+                       
+                        <a href="lesson34.html">27</a>
+                       
+                        <a href="lesson35.html">28</a>
+                       
+                        <a href="lesson36.html">29</a>
+                       
+                        <a href="lesson37.html">30</a>
+                       
+                        <a href="lesson38.html">31</a>
+                       
+                        <a href="lesson39.html">32</a>
+                       
+                        <a href="lesson4.html">33</a>
+                       
+                        <a href="lesson40.html">34</a>
+                       
+                        <a href="lesson41.html">35</a>
+                       
+                        <a href="lesson42.html">36</a>
+                       
+                        <a href="lesson43.html">37</a>
+                       
+                        <a href="lesson44.html">38</a>
+                       
+                        <a href="lesson45.html">39</a>
+                       
+                        <a href="lesson46.html">40</a>
+                       
+                        <a href="lesson47.html">41</a>
+                       
+                        <a href="lesson48.html">42</a>
+                       
+                        <a href="lesson49.html">43</a>
+                       
+                        <a href="lesson5.html">44</a>
+                       
+                        <a href="lesson50.html">45</a>
+                       
+                        <a href="lesson51.html">46</a>
+                       
+                        <a href="lesson52.html">47</a>
+                       
+                        <a href="lesson53.html">48</a>
+                       
+             <a href="lesson54.html" class="active">49</a>
+            
+                        <a href="lesson55.html">50</a>
+                       
+                        <a href="lesson56.html">51</a>
+                       
+                        <a href="lesson57.html">52</a>
+                       
+                        <a href="lesson58.html">53</a>
+                       
+                        <a href="lesson59.html">54</a>
+                       
+                        <a href="lesson6.html">55</a>
+                       
+                        <a href="lesson60.html">56</a>
+                       
+                        <a href="lesson61.html">57</a>
+                       
+                        <a href="lesson62.html">58</a>
+                       
+                        <a href="lesson63.html">59</a>
+                       
+                        <a href="lesson64.html">60</a>
+                       
+                        <a href="lesson65.html">61</a>
+                       
+                        <a href="lesson66.html">62</a>
+                       
+                        <a href="lesson67.html">63</a>
+                       
+                        <a href="lesson68.html">64</a>
+                       
+                        <a href="lesson69.html">65</a>
+                       
+                        <a href="lesson7.html">66</a>
+                       
+                        <a href="lesson70.html">67</a>
+                       
+                        <a href="lesson71.html">68</a>
+                       
+                        <a href="lesson72.html">69</a>
+                       
+                        <a href="lesson73.html">70</a>
+                       
+                        <a href="lesson74.html">71</a>
+                       
+                        <a href="lesson75.html">72</a>
+                       
+                        <a href="lesson76.html">73</a>
+                       
+                        <a href="lesson77.html">74</a>
+                       
+                        <a href="lesson78.html">75</a>
+                       
+                        <a href="lesson79.html">76</a>
+                       
+                        <a href="lesson8.html">77</a>
+                       
+                        <a href="lesson80.html">78</a>
+                       
+                        <a href="lesson9.html">79</a>
+                       
+     </body> 
+    </html>
